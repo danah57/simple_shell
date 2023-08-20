@@ -38,8 +38,8 @@ int unset_alias(info_t *info, char *str)
 }
 /**
  * set_alias - add, or override alias
- * @alias_string: alias to be seted in the form (name='value')
- * @data: struct for the program's data
+ * @str: alias to be seted in the form (name='value')
+ * @info: struct for the program's data
  * Return: zero if sucess, or other number if its declared in the arguments
  */
 int set_alias(info_t *info, char *str)
@@ -58,8 +58,7 @@ int set_alias(info_t *info, char *str)
 
 /**
  * print_alias - add, remove or show aliases
- * @data: struct for the program's data
- * @alias: name of the alias to be printed
+ * @node: name of the alias to be printed
  * Return: zero if sucess, or other number if its declared in the arguments
  */
 int print_alias(list_t *node)
