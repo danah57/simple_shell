@@ -4,7 +4,6 @@
  * **get_environ - ..
  *  @info: Structure containing potential arguments. Used to maintain
  *          constant function prototype
-
  * Return: Always 0
  */
 char **get_environ(info_t *info)
@@ -18,7 +17,7 @@ char **get_environ(info_t *info)
 	return (info->environ);
 }
 /**
- * builtin_unset_env -  Remove an environment variable
+ * _unsetenv -  Remove an environment variable
  * @info: struct for the program's data'
  *  @var: the string env var property
  * Return:  1 on delete, 0 otherwise
