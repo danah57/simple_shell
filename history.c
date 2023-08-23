@@ -1,9 +1,9 @@
-#include "MyShell"
+#include "MyShell.h"
 /**
  * get_history_file -  retrieves the content of the historical file
  * @info: a structure containing necessary information
  *
- * Return: a dynamically allocated string 
+ * Return: a dynamically allocated string
  *         containing the historical file's content
  */
 char *get_history_file(info_t *info)
@@ -104,7 +104,7 @@ int read_history(info_t *info)
 }
 
 /**
- * build_history_list - appends a new record to 
+ * build_history_list - appends a new record to
  *                     a linked list for history tracking
  * @info: Structure holding possible parameters. Employed for upkeep.
  * @buf: storage area for data
@@ -126,7 +126,7 @@ int build_history_list(info_t *info, char *buf, int linecount)
 }
 
 /**
- * renumber_history - assigns new numbers to entries in 
+ * renumber_history - assigns new numbers to entries in
  *                    the history linked list following modifications
  * @info: Structure holding possible parameters.
  *         Utilized for management purposes.
